@@ -22,19 +22,22 @@ void setup() {
   
 }
 
-void loop() {
-  void forward() {  
+void forward() {  
     motor1.run(FORWARD);
     motor2.run(FORWARD);
     motor3.run(FORWARD);
     motor4.run(FORWARD);
-  }
-  void stap() {
+}
+
+void stap() {
     motor1.run(RELEASE);
     motor2.run(RELEASE);
     motor3.run(RELEASE);
     motor4.run(RELEASE);
-  }
+}
+
+void loop() {
+  
   digitalWrite(7, HIGH);
   delayMicroseconds(10);
   digitalWrite(7, LOW);
